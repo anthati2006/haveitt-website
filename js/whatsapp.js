@@ -1,4 +1,5 @@
 console.log("whatsapp.js loaded");
+
 const SCRIPT_URL =
   "https://script.google.com/macros/s/AKfycbxhlOcys92vrrg_uLdJllMDLuKvvYIFZCv3HhMnkrGlo_Z1fhnTdEOJU0VTOG4bX_eDrA/exec";
 
