@@ -52,24 +52,27 @@ nav a:hover {
   padding: 14px;
 }
 
-/* PROFILE (HOME PAGE) */
+/* PROFILE (HOME PAGE) – NAME ONLY STYLE */
 .profile-box {
   text-align: center;
   margin-bottom: 18px;
 }
 
-.profile-box img {
-  width: 120px;
-  height: 120px;
-  border-radius: 50%;
-  object-fit: cover;
-  border: 3px solid #25D366;
+.profile-box.name-only {
+  display: inline-block;
+  background: linear-gradient(135deg, #111, #2a2a2a);
+  padding: 14px 28px;
+  border-radius: 14px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.35);
 }
 
-.profile-box p {
-  margin-top: 8px;
-  font-weight: bold;
-  font-size: 14px;
+.profile-box.name-only p {
+  margin: 0;
+  font-weight: 700;
+  font-size: 16px;
+  letter-spacing: 1px;
+  color: #f5c16c;
+  text-transform: uppercase;
 }
 
 /* PRODUCT CARD */
@@ -179,78 +182,79 @@ footer {
 
 /* DESKTOP ADJUSTMENTS */
 @media (min-width: 768px) {
+
   .product-card {
     max-width: 600px;
   }
-  /* CERTIFICATION BADGES */
-.cert-badges {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 10px;
-  margin: 10px 0;
-}
-
-.cert-badges img {
-  width: 70px;
-  filter: grayscale(100%);
-}
-
-.cert-badges img:hover {
-  filter: none;
-}
-
-/* QUALITY BADGES (SPRITE IMAGE) */
-.quality-badges {
-  display: flex;
-  justify-content: space-between;
-  margin: 12px 0 18px;
-}
-
-.badge {
-  width: 70px;
-  height: 70px;
-  background-image: url("../images/quality-badges.png.jpeg");
-  background-size: 400% 100%;
-  background-repeat: no-repeat;
-  filter: grayscale(100%);
-}
-
-.badge:hover {
-  filter: none;
-  transform: scale(1.05);
-  transition: 0.3s;
-}
-
-.badge.gluten { background-position: 0% 0%; }
-.badge.banned { background-position: 33.33% 0%; }
-.badge.sugar  { background-position: 66.66% 0%; }
-.badge.amino  { background-position: 100% 0%; }
-
 
   header h1 {
     font-size: 26px;
   }
+
+  /* CERTIFICATION BADGES */
+  .cert-badges {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin: 10px 0;
+  }
+
+  .cert-badges img {
+    width: 70px;
+    filter: grayscale(100%);
+  }
+
+  .cert-badges img:hover {
+    filter: none;
+  }
+
+  /* QUALITY BADGES (SPRITE IMAGE) */
+  .quality-badges {
+    display: flex;
+    justify-content: space-between;
+    margin: 12px 0 18px;
+  }
+
+  .badge {
+    width: 70px;
+    height: 70px;
+    background-image: url("../images/quality-badges.png.jpeg");
+    background-size: 400% 100%;
+    background-repeat: no-repeat;
+    filter: grayscale(100%);
+  }
+
+  .badge:hover {
+    filter: none;
+    transform: scale(1.05);
+    transition: 0.3s;
+  }
+
+  .badge.gluten { background-position: 0% 0%; }
+  .badge.banned { background-position: 33.33% 0%; }
+  .badge.sugar  { background-position: 66.66% 0%; }
+  .badge.amino  { background-position: 100% 0%; }
+
   /* IMAGE SLIDER (SWIPE) */
-.image-slider {
-  display: flex;
-  gap: 10px;
-  overflow-x: auto;
-  scroll-snap-type: x mandatory;
-  -webkit-overflow-scrolling: touch;
-  margin-bottom: 12px;
-}
+  .image-slider {
+    display: flex;
+    gap: 10px;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+    margin-bottom: 12px;
+  }
 
-.image-slider img {
-  min-width: 100%;
-  max-width: 100%;
-  border-radius: 8px;
-  scroll-snap-align: center;
-  flex-shrink: 0;
-}
+  .image-slider img {
+    min-width: 100%;
+    max-width: 100%;
+    border-radius: 8px;
+    scroll-snap-align: center;
+    flex-shrink: 0;
+  }
 
-/* Hide scrollbar (clean look) */
-.image-slider::-webkit-scrollbar {
-  display: none;
+  /* Hide scrollbar (clean look) */
+  .image-slider::-webkit-scrollbar {
+    display: none;
+  }
 }
-}
-
