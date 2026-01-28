@@ -1,5 +1,7 @@
-const SCRIPT_URL = "https://script.google.com/macros/s/AKfycbxhlOcys92vrrg_uLdJllMDLuKvvYIFZCv3HhMnkrGlo_Z1fhnTdEOJU0VTOG4bX_eDrA/exec";
+const SCRIPT_URL =
+  "https://script.google.com/macros/s/AKfycbxhlOcys92vrrg_uLdJllMDLuKvvYIFZCv3HhMnkrGlo_Z1fhnTdEOJU0VTOG4bX_eDrA/exec";
 
+/* FORM SUBMIT → GOOGLE SHEET + WHATSAPP */
 function submitOrder(e, product) {
   e.preventDefault();
 
@@ -30,7 +32,6 @@ Mobile: ${mobile}
 Address: ${address}
 City: Hyderabad`;
 
-  
   window.open(
     "https://wa.me/916304782014?text=" + encodeURIComponent(msg),
     "_blank"
@@ -39,7 +40,22 @@ City: Hyderabad`;
   form.reset();
 }
 
+/* QUICK ORDER BUTTON */
+function orderNow(productName) {
+  const msg = `Hello 👋
 
+I would like to enquire about:
+
+Product: ${productName}
+City: Hyderabad`;
+
+  window.open(
+    "https://wa.me/916304782014?text=" + encodeURIComponent(msg),
+    "_blank"
+  );
+}
+
+/* GENERIC WHATSAPP OPEN */
 function openWhatsApp(message) {
   window.open(
     "https://wa.me/916304782014?text=" + encodeURIComponent(message),
