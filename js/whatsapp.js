@@ -30,16 +30,19 @@ Mobile: ${mobile}
 Address: ${address}
 City: Hyderabad`;
 
+  // 👉 UPDATED NUMBER HERE
   window.open(
-    "https://wa.me/918790966832?text=" + encodeURIComponent(msg),
+    "https://wa.me/916304782014?text=" + encodeURIComponent(msg),
     "_blank"
   );
-function openWhatsApp(message) {
-  window.open(
-    "https://wa.me/918790966832?text=" + encodeURIComponent(message),
-    "_blank"
-  );
-}
 
   form.reset();
+}
+
+// Optional helper function
+function openWhatsApp(message) {
+  window.open(
+    "https://wa.me/916304782014?text=" + encodeURIComponent(message),
+    "_blank"
+  );
 }
