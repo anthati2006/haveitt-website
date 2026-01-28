@@ -1,18 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>Customer Reviews | Have itt</title>
+  <title>Customer Reviews | Have itt Nutrition</title>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Read real customer reviews of Have itt Nutrition whey protein and creatine supplements in Hyderabad.">
   <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
 
-<header>
+<!-- HERO -->
+<div class="hero">
   <h1>Customer Reviews</h1>
-  <p>What our customers say about Have itt Nutrition</p>
-</header>
+  <p>What athletes and fitness lovers say about Have itt Nutrition</p>
+</div>
 
 <nav>
   <a href="index.html">Home</a>
@@ -23,37 +25,50 @@
 
 <div class="container">
 
-  <!-- REVIEW 1 -->
-  <div class="product-card">
-    <strong>Rahul – Hyderabad</strong>
-    <p>⭐⭐⭐⭐⭐</p>
-    <p>
-      Very good quality whey protein. Digestion is easy and results are visible.
-      Fast delivery as well.
-    </p>
+  <!-- REVIEWS GRID -->
+  <div class="product-grid">
+
+    <!-- REVIEW 1 -->
+    <div class="product-card">
+      <strong>Rahul – Hyderabad</strong>
+      <p>⭐⭐⭐⭐⭐</p>
+      <p>
+        Very good quality whey protein. Digestion is easy and results are visible.
+        Fast delivery as well.
+      </p>
+    </div>
+
+    <!-- REVIEW 2 -->
+    <div class="product-card">
+      <strong>Sai Kiran – Hyderabad</strong>
+      <p>⭐⭐⭐⭐⭐</p>
+      <p>
+        Creatine quality is excellent. Strength improved within a week.
+        Genuine product.
+      </p>
+    </div>
+
+    <!-- ADD REVIEW -->
+    <div class="product-card">
+      <h3>Share Your Review</h3>
+      <p>
+        Bought from us already?  
+        Send your feedback on WhatsApp and we will publish it.
+      </p>
+
+      <button onclick="orderNow('Customer Review Submission')">
+        Send Review on WhatsApp
+      </button>
+    </div>
+
   </div>
 
-  <!-- REVIEW 2 -->
-  <div class="product-card">
-    <strong>Sai Kiran – Hyderabad</strong>
-    <p>⭐⭐⭐⭐⭐</p>
-    <p>
-      Creatine quality is excellent. Strength improved within a week.
-      Genuine product.
-    </p>
-  </div>
-
-  <!-- ADD REVIEW -->
-  <div class="product-card">
-    <h3>Share Your Review</h3>
-    <p>
-      Bought from us already?  
-      Send your feedback on WhatsApp and we will publish it.
-    </p>
-
-    <button onclick="orderNow('Customer Review Submission')">
-      Send Review on WhatsApp
-    </button>
+  <!-- TRUST STRIP -->
+  <div class="trust-strip">
+    <span>✔ Verified Customers</span>
+    <span>✔ Genuine Products</span>
+    <span>✔ Hyderabad Delivery</span>
+    <span>✔ COD Available</span>
   </div>
 
 </div>
@@ -65,10 +80,10 @@
 <!-- WhatsApp Logic -->
 <script src="js/whatsapp.js"></script>
 
-<!-- Tracking disabled to avoid JS crashes -->
+<!-- Tracking disabled -->
 <!-- <script src="js/tracking.js"></script> -->
 
-<!-- Sticky WhatsApp Button -->
+<!-- Sticky WhatsApp -->
 <a class="whatsapp-float" href="https://wa.me/916304782014" target="_blank">
   💬
 </a>
