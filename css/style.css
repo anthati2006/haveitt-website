@@ -1,15 +1,23 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;600;700&display=swap');
 
-body {
-  font-family: 'Poppins', Arial, sans-serif;
-}
-
 /* BRAND COLORS */
 :root {
   --dark: #0f0f0f;
   --accent: #25d366;
   --gold: #f5c16c;
   --bg: #f8f9fa;
+}
+
+/* GLOBAL RESET */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: 'Poppins', Arial, sans-serif;
+  background: #f5f5f5;
+  color: #111;
 }
 
 /* HERO */
@@ -46,84 +54,6 @@ body {
 .hero .cta a.secondary {
   background: transparent;
   border: 2px solid white;
-}
-
-/* PRODUCT GRID */
-.product-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-  gap: 20px;
-}
-
-/* CARD HOVER */
-.product-card {
-  transition: transform .25s ease, box-shadow .25s ease;
-}
-
-.product-card:hover {
-  transform: translateY(-4px);
-  box-shadow: 0 14px 28px rgba(0,0,0,.15);
-}
-
-/* PRICE HIGHLIGHT */
-.price-tag {
-  font-size: 1.2rem;
-  font-weight: 700;
-  color: var(--accent);
-}
-
-/* TRUST STRIP */
-.trust-strip {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 18px;
-  margin: 30px 0;
-  font-size: .9rem;
-  opacity: .85;
-}
-
-/* BADGE NOTE */
-.note {
-  background: #fff6e5;
-  // border-left: 4px solid var(--gold);
-  padding: 10px;
-  margin-top: 10px;
-  font-size: .9rem;
-}
-
-/* STICKY CTA BAR */
-.bottom-cta {
-  position: fixed;
-  bottom: 0;
-  width: 100%;
-  background: #111;
-  color: white;
-  padding: 12px;
-  display: flex;
-  justify-content: center;
-  z-index: 999;
-}
-
-.bottom-cta a {
-  background: var(--accent);
-  padding: 10px 22px;
-  border-radius: 999px;
-  color: white;
-  text-decoration: none;
-  font-weight: 600;
-}
-
-/* GLOBAL RESET */
-* {
-  box-sizing: border-box;
-}
-
-body {
-  margin: 0;
-  font-family: Arial, Helvetica, sans-serif;
-  background: #f5f5f5;
-  color: #111;
 }
 
 /* HEADER */
@@ -168,7 +98,14 @@ nav a:hover {
   padding: 14px;
 }
 
-/* PROFILE (HOME PAGE) – NAME ONLY STYLE */
+/* PRODUCT GRID */
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 20px;
+}
+
+/* PROFILE NAME BOX */
 .profile-box {
   text-align: center;
   margin-bottom: 18px;
@@ -187,7 +124,7 @@ nav a:hover {
   font-weight: 700;
   font-size: 16px;
   letter-spacing: 1px;
-  color: #f5c16c;
+  color: var(--gold);
   text-transform: uppercase;
 }
 
@@ -199,6 +136,12 @@ nav a:hover {
   padding: 16px;
   border-radius: 10px;
   box-shadow: 0 0 10px rgba(0,0,0,0.08);
+  transition: transform .25s ease, box-shadow .25s ease;
+}
+
+.product-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 14px 28px rgba(0,0,0,.15);
 }
 
 /* IMAGES */
@@ -241,6 +184,21 @@ del {
   color: #888;
 }
 
+.price-tag {
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: var(--accent);
+}
+
+/* COD NOTE */
+.note {
+  background: #fff6e5;
+  border-left: 4px solid var(--gold);
+  padding: 10px;
+  margin-top: 10px;
+  font-size: .9rem;
+}
+
 /* FORMS */
 form input,
 form textarea {
@@ -259,7 +217,7 @@ form textarea {
 /* BUTTONS */
 button {
   width: 100%;
-  background: #25D366;
+  background: var(--accent);
   color: #fff;
   border: none;
   padding: 14px;
@@ -282,11 +240,12 @@ footer {
   font-size: 13px;
 }
 
+/* FLOATING WHATSAPP */
 .whatsapp-float {
   position: fixed;
   bottom: 18px;
   right: 18px;
-  background: #25D366;
+  background: var(--accent);
   color: #fff;
   padding: 14px 16px;
   border-radius: 50%;
@@ -300,7 +259,29 @@ footer {
   justify-content: center;
 }
 
-/* DESKTOP ADJUSTMENTS */
+/* BOTTOM CTA BAR */
+.bottom-cta {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background: #111;
+  color: white;
+  padding: 12px;
+  display: flex;
+  justify-content: center;
+  z-index: 999;
+}
+
+.bottom-cta a {
+  background: var(--accent);
+  padding: 10px 22px;
+  border-radius: 999px;
+  color: white;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+/* DESKTOP */
 @media (min-width: 768px) {
 
   .product-card {
@@ -311,7 +292,6 @@ footer {
     font-size: 26px;
   }
 
-  /* CERTIFICATION BADGES */
   .cert-badges {
     display: flex;
     flex-wrap: wrap;
@@ -328,7 +308,6 @@ footer {
     filter: none;
   }
 
-  /* QUALITY BADGES (SPRITE IMAGE) */
   .quality-badges {
     display: flex;
     justify-content: space-between;
@@ -355,7 +334,6 @@ footer {
   .badge.sugar  { background-position: 66.66% 0%; }
   .badge.amino  { background-position: 100% 0%; }
 
-  /* IMAGE SLIDER (SWIPE) */
   .image-slider {
     display: flex;
     gap: 10px;
@@ -373,9 +351,7 @@ footer {
     flex-shrink: 0;
   }
 
-  /* Hide scrollbar (clean look) */
   .image-slider::-webkit-scrollbar {
     display: none;
   }
 }
-
