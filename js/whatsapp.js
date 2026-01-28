@@ -30,7 +30,7 @@ Mobile: ${mobile}
 Address: ${address}
 City: Hyderabad`;
 
-  // 👉 UPDATED NUMBER HERE
+  
   window.open(
     "https://wa.me/916304782014?text=" + encodeURIComponent(msg),
     "_blank"
@@ -39,7 +39,7 @@ City: Hyderabad`;
   form.reset();
 }
 
-// Optional helper function
+
 function openWhatsApp(message) {
   window.open(
     "https://wa.me/916304782014?text=" + encodeURIComponent(message),
