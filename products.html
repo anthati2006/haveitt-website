@@ -1,15 +1,17 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>Products | Have itt</title>
-  <link rel="stylesheet" href="css/style.css">
+  <title>Have itt Nutrition</title>
+  <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+  <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
 
 <header>
-  <h1>Our Products</h1>
+  <h1>Have itt Nutrition</h1>
+  <p>Premium Supplements • Self Delivery in Hyderabad</p>
 </header>
 
 <nav>
@@ -19,20 +21,61 @@
   <a href="contact.html">Contact</a>
 </nav>
 
-<div class="product-card">
-  <img src="images/whey-front.jpg" width="200">
-  <h3>Have itt Whey Protein</h3>
-  <a href="whey-protein.html">View Details</a>
+<div class="container">
+
+  <!-- HERO SECTION -->
+  <div class="product-card">
+    <h2>Order Genuine Supplements Directly</h2>
+    <p>
+      High-quality Whey Protein and Creatine Monohydrate.
+      No middlemen. Fast delivery in Hyderabad.
+    </p>
+
+    <button onclick="location.href='products.html'">
+      View Products
+    </button>
+  </div>
+
+ <div class="profile-box name-only">
+  <p>ANTHATI MANI</p>
 </div>
 
-<div class="product-card">
-  <img src="images/creatine-front.jpg" width="200">
-  <h3>Have itt Creatine Monohydrate</h3>
-  <a href="creatine.html">View Details</a>
+  <!-- WHY CHOOSE US -->
+  <div class="product-card">
+    <h3>Why Choose Have itt?</h3>
+    <ul>
+      <li>Premium quality supplements</li>
+      <li>Transparent pricing</li>
+      <li>Direct WhatsApp ordering</li>
+      <li>Self delivery in Hyderabad</li>
+    </ul>
+  </div>
+
+  <!-- QUICK ACTION -->
+  <div class="product-card">
+    <h3>Quick Order</h3>
+    <p>Chat with us directly on WhatsApp to place your order.</p>
+
+    <button onclick="orderNow('Quick Enquiry')">
+      Order on WhatsApp
+    </button>
+  </div>
+
 </div>
+
 <footer>
-  <p>Designed by M THRISHANK REDDY</p>
+  <p>Designed by ANTHATI MANI</p>
 </footer>
+
+<script src="js/whatsapp.js"></script>
+
+<!-- Sticky WhatsApp Button -->
+<a class="whatsapp-float" href="https://wa.me/916304782014" target="_blank">
+  💬
+</a>
+
 <script src="js/tracking.js"></script>
+
 </body>
 </html>
+
