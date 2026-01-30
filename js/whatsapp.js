@@ -35,7 +35,7 @@ Address: ${address}
 City: Hyderabad`;
 
   window.open(
-    "https://wa.me/916304782014?text=" + encodeURIComponent(msg),
+    "https://wa.me/916304782015?text=" + encodeURIComponent(msg),
     "_blank"
   );
 
@@ -52,7 +52,7 @@ Product: ${productName}
 City: Hyderabad`;
 
   window.open(
-    "https://wa.me/916304782014?text=" + encodeURIComponent(msg),
+    "https://wa.me/916304782015?text=" + encodeURIComponent(msg),
     "_blank"
   );
 }
@@ -60,7 +60,7 @@ City: Hyderabad`;
 /* GENERIC WHATSAPP OPEN */
 function openWhatsApp(message) {
   window.open(
-    "https://wa.me/916304782014?text=" + encodeURIComponent(message),
+    "https://wa.me/916304782015?text=" + encodeURIComponent(message),
     "_blank"
   );
 }
